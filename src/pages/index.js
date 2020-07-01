@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import Hero from '../components/hero'
 import Faq from '../components/faq'
 import Products from '../components/products'
+import Email from '../components/email'
 import SEO from '../components/seo'
 
 export const query = graphql`
@@ -43,6 +44,7 @@ export default function Home({ data })
 			<Hero siteData={siteData}/>
 			<Faq siteData={siteData}/>
 			<Products siteData={siteData}/>
+			<Email siteData={siteData}/>
 		</Layout>
 	);
 }
